@@ -37,6 +37,17 @@ module.exports = {
     callChains: ['Logger', 'debug', 'log'],
   }]],
 }
+
+// example:
+// input
+console.log('hello')
+Logger.debug('123')
+Logger.inst.debug('123')
+Logger(123)
+Logger.log('123')
+
+// output
+console.log('hello')
 ```
 
 ## License
@@ -51,7 +62,7 @@ module.exports = {
 [npm-downloads-href]: https://npmjs.com/package/babel-plugin-transform-remove-funcall
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/babel-plugin-transform-remove-funcall?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=babel-plugin-transform-remove-funcall
-[license-src]: https://img.shields.io/github/license/antfu/babel-plugin-transform-remove-funcall.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/babel-plugin-transform-remove-funcall/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/jianxing-xu/babel-plugin-transform-remove-funcall.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
 [jsdocs-href]: https://www.jsdocs.io/package/babel-plugin-transform-remove-funcall
