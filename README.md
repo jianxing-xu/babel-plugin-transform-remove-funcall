@@ -33,9 +33,10 @@ pnpm i babel-plugin-transform-remove-funcall
 ```js
 // .babelrc.js or babel.config.js
 module.exports = {
-  plugins: [['./dist/index.mjs', {
-    callChains: ['Logger', 'debug', 'log'],
-  }]],
+  plugins: [
+    ['transform-remove-funcall', { callChains: ['Logger', 'debug', 'log'] }]
+    // ...other plugins
+  ],
 }
 
 // example:
