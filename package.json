@@ -1,13 +1,13 @@
 {
   "name": "babel-plugin-transform-remove-funcall",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@9.1.1",
   "description": "_description_",
   "author": "Jianxing Xu <xjx_me@yeah.net>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/jianxing-xu",
-  "homepage": "https://github.com/antfu/babel-plugin-transform-remove-funcall#readme",
+  "homepage": "https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall.git"
