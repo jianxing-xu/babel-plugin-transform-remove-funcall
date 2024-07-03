@@ -1,4 +1,4 @@
-# pkg-placeholder
+# babel-plugin-transform-remove-funcall
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -6,32 +6,52 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-_description_
+A babel plugin that removes certain function calls from your code.
+For example:
+```js
+// input
+console.log('hello')
+Logger.debug('123')
+Logger(123)
+Logger.log('123')
 
-> **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+// output
+console.log('hello')
+```
 
-## Sponsors
+## Install
+```bash
+# npm
+npm i babel-plugin-transform-remove-funcall
+# yarn
+yarn add babel-plugin-transform-remove-funcall
+# pnpm
+pnpm i babel-plugin-transform-remove-funcall
+```
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
+## Usage
+```js
+// .babelrc.js or babel.config.js
+module.exports = {
+  plugins: [['./dist/index.mjs', {
+    callChains: ['Logger', 'debug', 'log'],
+  }]],
+}
+```
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2024-PRESENT [Jianxing Xu](https://github.com/jianxing-xu)
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/pkg-placeholder
-[npm-downloads-src]: https://img.shields.io/npm/dm/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/pkg-placeholder
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=pkg-placeholder
-[license-src]: https://img.shields.io/github/license/antfu/pkg-placeholder.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/pkg-placeholder/blob/main/LICENSE
+[npm-version-src]: https://img.shields.io/npm/v/babel-plugin-transform-remove-funcall?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/babel-plugin-transform-remove-funcall
+[npm-downloads-src]: https://img.shields.io/npm/dm/babel-plugin-transform-remove-funcall?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-href]: https://npmjs.com/package/babel-plugin-transform-remove-funcall
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/babel-plugin-transform-remove-funcall?style=flat&colorA=080f12&colorB=1fa669&label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=babel-plugin-transform-remove-funcall
+[license-src]: https://img.shields.io/github/license/antfu/babel-plugin-transform-remove-funcall.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/antfu/babel-plugin-transform-remove-funcall/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
+[jsdocs-href]: https://www.jsdocs.io/package/babel-plugin-transform-remove-funcall
