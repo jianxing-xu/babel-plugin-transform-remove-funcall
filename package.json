@@ -13,7 +13,13 @@
     "url": "git+https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall.git"
   },
   "bugs": "https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall/issues",
-  "keywords": ['babel', 'plugin', 'console', 'log', 'function'],
+  "keywords": [
+    "babel",
+    "plugin",
+    "console",
+    "log",
+    "function"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
