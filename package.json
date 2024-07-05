@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.5",
   "packageManager": "pnpm@9.1.1",
-  "description": "_description_",
+  "description": "a babel plugin for remove some function call",
   "author": "Jianxing Xu <xjx_me@yeah.net>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/jianxing-xu",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall.git"
   },
   "bugs": "https://github.com/jianxing-xu/babel-plugin-transform-remove-funcall/issues",
-  "keywords": [],
+  "keywords": ['babel', 'plugin', 'console', 'log', 'function'],
   "sideEffects": false,
   "exports": {
     ".": {
